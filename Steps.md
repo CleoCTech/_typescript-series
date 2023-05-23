@@ -22,6 +22,13 @@ If you're receiving a "command not recognized" error when trying to run a TypeSc
 
 4. Verify the installation: After installing or configuring TypeScript, open a new command prompt or terminal window and try running `tsc -v` again to ensure it's recognized. If the command executes successfully and displays the TypeScript version, you should be able to compile TypeScript files using the `tsc` command.
 
-C:\Users\Administrator\AppData\Roaming\npm\node_modules\typescript\bin
+   `C:\Users\Administrator\AppData\Roaming\npm\node_modules\typescript\bin`
 
 If you still encounter issues, please provide more details about your operating system and the steps you have already taken to install TypeScript, and I'll do my best to assist you further.
+
+# 
+- Create `tsconfig.json` file inside root folder using a command `tsc --init` such that all our `.ts` files will be in `src` directory and `.js` compilede files will be inside `./build/js` directory.
+
+- Create those directories and specify them in `tsconfig.json`
+   - `"rootDir": "./src",  `
+   - `"outDir": "./build/js",`
